@@ -3,6 +3,7 @@ loaderVersion="[43,)"
 license="All rights reserved"
 
 [[mods]]
+displayTest="IGNORE_ALL_VERSION"
 modId="clickthrough"
 version="${file.jarVersion}"
 displayName="ClickThrough Forge"
