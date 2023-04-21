@@ -1,6 +1,6 @@
 modLoader="javafml"
 loaderVersion="[43,)"
-license="All rights reserved"
+license="MIT"
 
 [[mods]]
 displayTest="IGNORE_ALL_VERSION"
@@ -8,7 +8,7 @@ modId="clickthrough"
 version="${file.jarVersion}"
 displayName="ClickThrough Forge"
 logoFile="clickthrough.png"
-authors="NexSqaud"
+authors="NexSqaud, gbl"
 description='''
 Mod allows to open containers through item frames and signs
 Based on Fabric ClickThrough version
