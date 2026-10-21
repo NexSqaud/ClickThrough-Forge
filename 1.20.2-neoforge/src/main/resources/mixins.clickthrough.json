@@ -1,0 +1,7 @@
+{
+  "required": true,
+  "minVersion": "0.6",
+  "compatabilityLevel": "JAVA_17",
+  "package": "ru.nexsqaud.clickthrough.mixins",
+  "client": ["ItemUseMixin", "SneakingCancelsInteractionMixin"]
+}

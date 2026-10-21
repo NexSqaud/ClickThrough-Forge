@@ -1,7 +1,13 @@
-pluginManagement {
-    repositories {
-        gradlePluginPortal()
-        maven { url = 'https://maven.minecraftforge.net/' }
-        maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
-    }
-}
+rootProject.name = 'clickthrough'
+
+includeBuild '1.19.2-forge'
+includeBuild '1.20.1-forge'
+includeBuild '1.21-forge'
+includeBuild '26.1-forge'
+includeBuild '26.2-forge'
+includeBuild '26.3-forge'
+includeBuild '1.20.2-neoforge'
+includeBuild '1.21-neoforge'
+includeBuild '26.1-neoforge'
+includeBuild '26.2-neoforge'
+includeBuild '26.3-neoforge'

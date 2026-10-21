@@ -1,0 +1,41 @@
+buildscript {
+    repositories {
+        maven { url = 'https://maven.neoforged.net/releases' }
+    }
+}
+
+plugins {
+    id 'base'
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.+'
+}
+
+apply from: '../common.gradle'
+java.toolchain.languageVersion = JavaLanguageVersion.of(25)
+
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+neoForge {
+    version = '26.1.0.19-beta'
+
+    mods {
+        clickthrough {
+            sourceSet project.sourceSets.main
+        }
+    }
+}
+
+jar {
+    manifest {
+        attributes([
+                "TweakClass": "org.spoongepowered.asm.launch.MixinTweaker",
+                "MixinConfigs": "mixins.clickthrough.json",
+                "FMLCorePluginContainsFMLMod": "true",
+                "ForceLoadAsMod": "true",
+                "Implementation-Title": project.name,
+                "Implementation-Version": project.jar.archiveVersion,
+                "Implementation-Vendor": "NexSqaud",
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
+}

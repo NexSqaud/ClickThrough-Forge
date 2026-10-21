@@ -1,0 +1,32 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="MIT"
+
+[[mods]]
+displayTest="IGNORE_ALL_VERSION"
+modId="clickthrough"
+version="${file.jarVersion}"
+displayName="ClickThrough Forge"
+logoFile="clickthrough.png"
+authors="NexSqaud, gbl"
+description='''
+Mod allows to open containers through item frames and signs
+Based on Fabric ClickThrough version
+'''
+
+[[mixins]]
+config="mixins.clickthrough.json"
+
+[[dependencies.clickthrough]] 
+    modId="neoforge"
+    mandatory=true
+    versionRange="[26.3,26.4)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.clickthrough]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[26.3,26.4)"
+    ordering="NONE"
+    side="BOTH"

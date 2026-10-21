@@ -1,0 +1,10 @@
+{
+    "required": true,
+    "minVersion": "0.6",
+    "package": "ru.nexsqaud.clickthrough.mixins",
+    "refmap": "mixins.clickthrough.refmap.json",
+    "client": [
+        "ItemUseMixin",
+        "SneakingCancelsInteractionMixin"
+    ]
+}
