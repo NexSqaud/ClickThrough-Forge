@@ -3,3 +3,12 @@ group = 'ru.nexsqaud.clickthrough'
 base {
     archivesName = "clickthrough-${project.name}"
 }
+
+ext {
+    mod_id = 'clickthrough'
+    mod_name = 'ClickThrough Forge'
+    mod_license = 'MIT'
+    mod_version = '1.0.0'
+    mod_authors = 'NexSqaud, gbl'
+    mod_description = 'Mod allows to open containers through item frames and signs. Based on Fabric ClickThrough version'
+}

@@ -5,7 +5,7 @@ license="MIT"
 [[mods]]
 displayTest="IGNORE_ALL_VERSION"
 modId="clickthrough"
-version="${file.jarVersion}"
+version="${mod_version}"
 displayName="ClickThrough Forge"
 logoFile="clickthrough.png"
 authors="NexSqaud, gbl"
